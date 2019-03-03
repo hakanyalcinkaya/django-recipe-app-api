@@ -9,7 +9,9 @@ class ModelTests(TestCase):
         password = "loremIpsumDolor"
         user = get_user_model().objects.create_user(
             email=email,
-            password=password
+            password=password,
+            first_name="Hakan",
+            last_name="Yalcinkaya",
         )
         self.assertEqual(user.email, email)
         self.assertTrue(user.check_password(password))
@@ -23,3 +25,21 @@ class ModelTests(TestCase):
             password=password
         )
         self.assertEqual(user.email, email.lower())
+
+    def test_new_user_invalid_email(self):
+        """Test if new user try not validated email"""
+        with self.assertRaises(ValueError):
+            get_user_model().objects.create_user(
+                None,
+                'Password'
+            )
+
+    def test_creating_new_superuser(self):
+        """Test creating a new super user"""
+        user = get_user_model().objects.create_superuser(
+            email="staff@admin.com",
+            password="Lorem12345"
+        )
+
+        self.assertTrue(user.is_staff)
+        self.assertTrue(user.is_superuser)

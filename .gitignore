@@ -1,6 +1,9 @@
 .idea
 notes.md
 
+# migrations
+app/*/migrations/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
