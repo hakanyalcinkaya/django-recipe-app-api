@@ -1,4 +1,4 @@
-# Weekend Project : RECEPIES API
+# Weekend Project : Recipes API
 
 
 TODO List:
@@ -13,8 +13,8 @@ TODO List:
 - [ ] Docker for RabbitMQ
 - [ ] Celery 
 - [x] Custom User Model
-- [ ] Recipes Model
-- [ ] Recipes API
+- [ ] recipes Model
+- [ ] recipes API
 - [ ] JWT
 - [ ] React with WebPack
 - [ ] Vue with Parcel
