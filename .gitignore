@@ -2,7 +2,7 @@
 notes.md
 
 # migrations
-app/*/migrations/0*
+# app/*/migrations/0*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
