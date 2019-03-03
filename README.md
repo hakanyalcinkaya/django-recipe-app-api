@@ -13,8 +13,8 @@ TODO List:
 - [ ] Docker for RabbitMQ
 - [ ] Celery 
 - [x] Custom User Model
-- [ ] recipes Model
-- [ ] recipes API
+- [ ] Recipes Model
+- [ ] Recipes API
 - [ ] JWT
 - [ ] React with WebPack
 - [ ] Vue with Parcel

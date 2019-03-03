@@ -4,8 +4,11 @@ python:
 
 services:
     - docker
+    - postgresql
 
-before_script: pip install docker-compose
+before_script:
+    - pip install docker-compose
+    - psql -c 'create database recipesdb;' -U postgres
 
 script:
     - docker-compose run app sh -c "python manage.py makemigrations"
