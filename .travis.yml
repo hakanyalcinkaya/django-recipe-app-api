@@ -13,4 +13,4 @@ before_script:
 script:
     - docker-compose run app sh -c "python manage.py makemigrations"
     - docker-compose run app sh -c "python manage.py migrate"
-    - docker-compose run app sh -c "python manage.py test && flake8"
+    - docker-compose run app sh -c "python manage.py test"
